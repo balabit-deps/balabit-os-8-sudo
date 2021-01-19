@@ -2,3 +2,10 @@ typo-in-classic-insults.diff
 paths-in-samples.diff
 Whitelist-DPKG_COLORS-environment-variable.diff
 ignore-rlimit-core-failure.patch
+CVE-2021-23239.patch
+CVE-2021-3156-pre1.patch
+CVE-2021-3156-1.patch
+CVE-2021-3156-2.patch
+CVE-2021-3156-3.patch
+CVE-2021-3156-4.patch
+CVE-2021-3156-5.patch
