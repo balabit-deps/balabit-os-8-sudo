@@ -1,3 +1,13 @@
+sudo (1.8.31-1ubuntu1.4) focal-security; urgency=medium
+
+  * SECURITY UPDATE: arbitrary file overwrite via sudoedit
+    - debian/patches/CVE-2023-22809.patch: do not permit editor arguments
+      to include -- in plugins/sudoers/editor.c, plugins/sudoers/sudoers.c,
+      plugins/sudoers/visudo.c.
+    - CVE-2023-22809
+
+ -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Mon, 16 Jan 2023 08:06:24 -0500
+
 sudo (1.8.31-1ubuntu1.2) focal-security; urgency=medium
 
   * SECURITY UPDATE: dir existence issue via sudoedit race
