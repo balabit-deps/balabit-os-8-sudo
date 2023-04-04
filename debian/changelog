@@ -1,3 +1,19 @@
+sudo (1.8.31-1ubuntu1.5) focal-security; urgency=medium
+
+  * SECURITY UPDATE: does not escape control characters
+    - debian/patches/CVE-2023-2848x-1.patch: escape control characters in
+      log messages and sudoreplay output in docs/sudoers.man.in,
+      docs/sudoers.mdoc.in, docs/sudoreplay.man.in,
+      docs/sudoreplay.mdoc.in, include/sudo_compat.h, include/sudo_lbuf.h,
+      lib/util/lbuf.c, lib/util/util.exp.in, plugins/sudoers/logging.c,
+      plugins/sudoers/sudoreplay.c.
+    - debian/patches/CVE-2023-2848x-2.patch: fix regression in
+      plugins/sudoers/logging.c.
+    - CVE-2023-28486
+    - CVE-2023-28487
+
+ -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Tue, 04 Apr 2023 07:56:28 -0400
+
 sudo (1.8.31-1ubuntu1.4) focal-security; urgency=medium
 
   * SECURITY UPDATE: arbitrary file overwrite via sudoedit
